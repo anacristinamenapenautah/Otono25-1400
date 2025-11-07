@@ -73,10 +73,7 @@ la solución implementada para cada uno.
 
 """
 """
-#  [INICIO]
-                   |
-                
-                 Mostrar "Bienvenido..." y las instrucciones
+Seudocodigo
 
   // 1. Inicializar estructuras
   estilos <- diccionario con claves:
