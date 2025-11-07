@@ -72,3 +72,70 @@ la solución implementada para cada uno.
 - Si tuvieras más tiempo, ¿cuáles serían las mejoras o nuevas funcionalidades prioritarias que implementarías?
 
 """
+#  [INICIO]
+                   |
+                
+                 Mostrar "Bienvenido..." y las instrucciones
+
+  // 1. Inicializar estructuras
+  estilos <- diccionario con claves:
+      "contemporaneo" -> 0
+      "moderno"       -> 0
+      "industrial"    -> 0
+      "shabby"        -> 0
+
+  preguntas <- lista vacía
+  // Cada elemento de 'preguntas' será un registro con:
+  //   texto, opciones (lista de 4 strings), respuesta (lista de 4 estilos)
+
+  Agregar a preguntas el registro para la Pregunta 1:
+    texto = "¿Qué tipo de colores prefieres...?"
+    opciones = ["a) ...", "b) ...", "c) ...", "d) ..."]
+    respuesta = ["contemporaneo", "moderno", "industrial", "shabby"]
+
+  Repetir para todas las preguntas (2, 3, 4, ...)
+
+  // 2. Recorrer preguntas (bucle)
+  PARA cada pregunta p EN preguntas HACER
+    Mostrar p.texto
+    PARA cada opcion EN p.opciones HACER
+      Mostrar opcion
+    FIN PARA
+
+    leer respuesta_usuario (convertir a minúsculas)
+
+    SI respuesta_usuario está en ["a","b","c","d"] ENTONCES
+      indice <- posición de respuesta_usuario en ["a","b","c","d"]
+      estilo_elegido <- p.respuesta[indice]
+      estilos[estilo_elegido] <- estilos[estilo_elegido] + 1
+    SINO
+      Mostrar "Respuesta inválida, se omitirá esta pregunta."
+    FIN SI
+  FIN PARA
+
+  // 3. Calcular resultado
+  mayor <- valor máximo en estilos (max(estilos.values()))
+  lista_ganadores <- lista vacía
+
+  PARA cada (estilo, puntos) EN estilos HACER
+    SI puntos == mayor ENTONCES
+      añadir estilo a lista_ganadores
+    FIN SI
+  FIN PARA
+
+  // 4. Mostrar resultado (manejo de empates)
+  SI longitud(lista_ganadores) == 1 ENTONCES
+    estilo_final <- lista_ganadores[0]
+    Mostrar "Tu estilo es: " + estilo_final
+    Mostrar descripción correspondiente a estilo_final
+  SINO
+    // Hay empate entre dos o más estilos
+    Mostrar "Hay un empate entre: " + lista_ganadores
+    Mostrar "Puedes repetir el test o ver una descripción de cada estilo."
+    (Opcional) pedir pregunta de desempate o mostrar los estilos empatados
+  FIN SI
+
+FIN
+
+
+## De la charla recibida se pudo evidenciar que aun falta mucho por hacer en cuanto a reciclaje, hay que trabajar no solamente en el proceso, sino en como las personas puedan desde sus hogares aportar con soluciones. Me parecio muy valido lo que menciono que ya existen leyes que protegen a paises pobres de recibir basura##
