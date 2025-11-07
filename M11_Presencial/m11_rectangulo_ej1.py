@@ -24,7 +24,9 @@ class Rectangulo:
 
     # TODO: Paso 1. Completa el método de inicialización.
     def __init__(self, ancho, alto):
-        """
+      self.ancho= ancho
+      self.alto= alto
+      """
         Inicializa un nuevo objeto Rectangulo.
 
         Args:
@@ -34,7 +36,7 @@ class Rectangulo:
         # Almacena el ancho y el alto como atributos de la instancia.
         # self.ancho = ...
         # self.alto = ...
-        print(f"Rectángulo creado con ancho {ancho} y alto {alto}")
+      print(f"Rectángulo creado con ancho {ancho} y alto {alto}")
 
     # TODO: Paso 2. Completa el método para calcular el área.
     def calcular_area(self):
@@ -44,6 +46,7 @@ class Rectangulo:
         Returns:
           int or float: El área calculada.
         """
+        return self.ancho * self.alto
         # El área es el producto del ancho y el alto del objeto.
         # return self.ancho * ...
         return 0  # Reemplaza esto con tu cálculo

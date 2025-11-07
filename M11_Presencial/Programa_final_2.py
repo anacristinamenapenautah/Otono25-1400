@@ -72,6 +72,7 @@ la solución implementada para cada uno.
 - Si tuvieras más tiempo, ¿cuáles serían las mejoras o nuevas funcionalidades prioritarias que implementarías?
 
 """
+"""
 #  [INICIO]
                    |
                 
@@ -138,4 +139,5 @@ la solución implementada para cada uno.
 FIN
 
 
-## De la charla recibida se pudo evidenciar que aun falta mucho por hacer en cuanto a reciclaje, hay que trabajar no solamente en el proceso, sino en como las personas puedan desde sus hogares aportar con soluciones. Me parecio muy valido lo que menciono que ya existen leyes que protegen a paises pobres de recibir basura##
+## De la charla recibida se pudo evidenciar que aun falta mucho por hacer en cuanto a reciclaje, hay que trabajar no solamente en el proceso, sino en como las personas puedan desde sus hogares aportar con soluciones. Me parecio muy valido lo que menciono que ya existen leyes que protegen a paises pobres de recibir basura
+"""
