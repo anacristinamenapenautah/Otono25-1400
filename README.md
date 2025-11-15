@@ -1,79 +1,54 @@
-<<<<<<< HEAD
-# Otono25-1400
-#Para los valientes
+## Entrega
+El archivo Python gestion_registros.py (que debe contener la solución a ambas partes).
+Los archivos de datos generados: mi_registro.txt y producto_nuevo.json.
 
-#BC
-#sm
-#New Updates by ETG
-#Marleny
-#David Cisneros 
-#Ana
-Jhon Regueros
-#angelica osuna 
+# Parte 1: Seguir las instrucciones en gestion_registros.py
 
-# Laboratorios en Clase – Otoño 2025
+# Parte 2: El Conversor de Datos (CSV y JSON)
 
-¡Bienvenidos/as!
+A. Instrucciones:
+1. Usar el documento informacion.csv
+2. El contenido debe ser el siguiente:
 
-Este repositorio está destinado a los laboratorios que realizaremos **presencialmente en clase** durante el semestre. Aquí encontrarás carpetas y archivos correspondientes a cada práctica.
+cantante, cancion, año, pais, nombre
+Luis Fonsi, Despacito, 2017, Puerto Rico, Luis Alfonso Rodríguez López-Cepero
+Shakira, La Tortura, 2005, Colombia, Shakira Isabel Mebarak Ripoll
 
-## ¿Qué encontrarás aquí?
+B. Leer el CSV e Imprimir:
 
-- Múltiples carpetas, una por cada laboratorio
-- Instrucciones y archivos base para comenzar
-- Ejercicios enfocados en los temas vistos en clase
+1. En gestion_registros.py, importa el módulo csv al inicio. 
+2. Usa la estructura with open(...) junto con csv.reader() para leerlo.
+3. Itera sobre las filas del documento e imprimir solo los cantantes.
 
-## Requisitos
-
-Para trabajar con este repositorio necesitarás:
-
-- Visual Studio Code u otro editor de texto
-- Git instalado en tu computadora
-
-## ¿Cómo usar este repositorio?
-
-Si deseas tu propia copia en lo que trabajamos en clase:
-
-1. Hacer clic en el botón verde **“Code”**
-2. Seleccionar **“Download ZIP”**
-3. Extraer el archivo y abrir la carpeta en tu editor
+Salida esperada:
 
 
-Si deseas guardar tus trabajos para el futuro, guarda tus archivos en Classroom.
-=======
-
-# ✅ Módulo 8 - Listas
-Este módulo está diseñado para ayudarte a usar cadenas de texto, usar archivos y manejar excepciones en el codigo. 
-
-## 📂 Contenido
-Cada carpeta contiene dos archivos:
-
-`mX_codigo_ejX.py`: Código base que debes completar.
-`test_mX_ejX.py`: Script para probar automáticamente tu código.
-
-## 🧑‍💻 Instrucciones para los estudiantes
-1. Abrir el proyecto en VS Code, llega a la carpeta adecuada.
-
-2. Trabajar en los ejercicios
-- Abre el archivo codigo.py de cada ejercicio.
-- Lee las instrucciones detalladas en el encabezado del archivo.
-- Escribe tu solución en los espacios indicados.
-
-3. Responde las Analizando preguntas en el ultimo TODO con #. 
-
-4. Probar tu código
-- Abre una terminal integrada (Terminal > New Terminal) en VS Code.
-- Asegúrate de estar ubicado dentro de la carpeta de cada ejercicio.
-- Ejecuta:
-```
-python #test_mX_ejX.py
-```
-- Esto ejecutará pruebas básicas para verificar que tu código funciona como se espera.
-
-4. Entrega en GitHub
-- Sube todas las carpetas con tus soluciones 
-- Entrega el enlace a tu carpeta `modulo_08` en Canvas.
-- ✅ Asegúrate de que el repositorio esté público o que hayas compartido permisos correctamente.
 
 
->>>>>>> 9dba64f6e0d7018db2c7b52004590115f257c9f3
+
+
+
+C. Convertir un diccionario a JSON
+
+1. En gestion_registors.py al inicio importar json.
+2. Crea un diccionario llamado nuevo_producto asi:
+
+nuevo_producto = {
+    "ID": 104,
+    "Nombre": "Webcam",
+    "Precio": 45.99,
+    "Stock": 50
+}
+
+3. Usa la funcion json.dump() para guardar el diccionario en un nuevo archivo llamado producto_nuevo.json.
+
+D. Cargar desde JSON (Deserialización):
+
+1. Usa la función json.load() para abrir y leer producto_nuevo.json 
+2. Guarda el resultado en un variable llamada data_cargada.
+3. Imprime el Nombre y el Precio del producto cargado para verificar que fue exitosa.
+
+Salida esperada:
+Producto cargado desde JSON:
+Nombre: Webcam
+Precio: 45.99
